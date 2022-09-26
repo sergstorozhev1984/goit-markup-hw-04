@@ -1,0 +1,390 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  color: var(--primery-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* logo */
+
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.white {
+  color: var(--primary-white-color);
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* site-nav, auth-nav */
+
+.site-nav .link,
+.auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.site-nav {
+  margin-left: 93px;
+}
+
+.site-nav .item + .item,
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.auth-nav {
+  margin-left: auto;
+}
+
+.auth-nav .link {
+  color: var(--primery-text-color);
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-mail::before {
+  content: "";
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+
+  background-image: url(../images/icons.svg/envelope1.svg);
+}
+
+.icon-tel::before {
+  content: "";
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+
+  display: inline-flex;
+  background-image: url(../images/icons.svg/smartphone1.svg);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* банер, hero */
+
+.baner {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg), linear-gradient(to right, #c4c4c4, #c4c4c4);
+
+  text-align: center;
+}
+
+.baner-title {
+  margin-bottom: 30px;
+
+  color: var(--primary-white-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* section-title */
+
+.section {
+  padding: 94px 0;
+}
+.section.padding-bottom {
+  padding-bottom: 0;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-title.hidden {
+  display: none;
+}
+
+/*  Особливості*/
+
+.features {
+  display: flex;
+  align-content: flex-start;
+
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features .item + .item,
+.boxes .item + .item {
+  margin-left: 30px;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Чим ми займаємося */
+
+/*  Наша команда*/
+
+.grey {
+  background: #f5f4fa;
+}
+.our-team .item + .item {
+  margin-left: 30px;
+}
+
+.team-member-picture,
+.team-member-job {
+  margin-bottom: 30px;
+}
+
+.team-member-name {
+  margin-bottom: 10px;
+}
+
+.team-member-name,
+.team-member-job {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-member-job {
+  font-weight: 400;
+  color: var(--primery-text-color);
+}
+
+/* footer */
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.logo.white {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.logo-accent {
+  display: inline-block;
+}
+.contacts .link {
+  /* margin-bottom: 9px; */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contacts .item + .item {
+  margin-top: 9px;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.transparency {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* text-decoration: none; */
+  border-radius: 4px;
+}
+.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: #188ce8;
+}
+/* portfolio */
+
+.filters {
+  justify-content: center;
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+.filters .item + .item {
+  margin-left: 8px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: -15px; */
+}
+
+.projects .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  /* margin: 15px; */
+}
+
+.projects .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projects .link {
+  text-decoration: none;
+}
+
+.project-title {
+  /* margin-top: 20px; */
+  padding-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project-filter {
+  margin-left: 24px;
+  margin-right: 24px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 20px;
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.border {
+  /* margin-top: 20px; */
+  /* padding-top: 20px; */
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
