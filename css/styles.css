@@ -281,6 +281,8 @@ address {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* Our speciality */
